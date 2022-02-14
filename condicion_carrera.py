@@ -20,7 +20,6 @@ def resultados(lock):
 def main(): 
    
     for y in range(5):
-        print(y)
         lock = threading.Lock() 
         sub_proceso = threading.Thread(target=resultados, args=(lock,)) 
         sub_proceso.start() 
